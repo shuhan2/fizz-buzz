@@ -3,19 +3,16 @@ public enum ZzType {
   BUZZ(5, "Buzz"),
   WHIZZ(7, "Whizz");
 
-  private int number;
-  private String string;
+  private int targetNumber;
+  private String returnValue;
 
-  ZzType(int number, String string) {
-    this.number = number;
-    this.string = string;
+  ZzType(int targetNumber, String returnValue) {
+    this.targetNumber = targetNumber;
+    this.returnValue = returnValue;
   }
 
-  public int getNumber() {
-    return number;
-  }
+  public String parse(int number) {
+    return number % targetNumber == 0 ? returnValue : "";
 
-  public String getString() {
-    return string;
   }
 }
