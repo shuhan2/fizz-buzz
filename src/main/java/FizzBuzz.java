@@ -1,11 +1,17 @@
 public class FizzBuzz {
 
   public String transform(int number) {
-    if (number % 3 ==0) {
-      return "Fizz";
+    if ((number % ZzType.FIZZ.getNumber()) == 0) {
+      return ZzType.FIZZ.getString();
+
     }
-    if (number % 5 ==0) {
-      return "Buzz";
+    if ((number % ZzType.BUZZ.getNumber()) == 0) {
+      return ZzType.BUZZ.getString();
+
+    }
+    if ((number % ZzType.WHIZZ.getNumber()) == 0) {
+      return ZzType.WHIZZ.getString();
+
     }
     return String.valueOf(number);
   }
