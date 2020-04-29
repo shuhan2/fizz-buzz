@@ -1,0 +1,61 @@
+Tasking
+1.
+given: 1
+when: transform
+then: return "1"
+
+2.
+given: 6
+when: transform
+then: return "Fizz"
+
+3.
+given: 10
+when: transform
+then: return "Buzz"
+
+4.
+given: 14
+when: transform
+then: return "Whizz"
+
+5.
+given: 210
+when: transform
+then: return "FizzBuzzWhizz"
+
+6.
+given: 13
+when: transform
+then: return "Fizz"
+
+7.
+given: 30
+when: transform
+then: return "Fizz"
+
+8.
+given: 35
+when: transform
+then: return "BuzzWhizz"
+
+9.
+given: 51
+when: transform
+then: return "51"
+
+10.
+given: 70
+when: transform
+then: return "70"
+
+11.
+given: 75
+when: transform
+then: return "Fizz"
+
+12.
+given: 73
+when: transform
+then: return "73"
+
