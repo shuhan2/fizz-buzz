@@ -1,14 +1,18 @@
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.CsvSource;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class FizzBuzzTest {
 
-  @Test
-  void should_return_1_when_transform_given_1() {
+  @ParameterizedTest
+  @CsvSource({
+      "'1', 1, 'should return original string value when transform given no special number'",
+      "'Fizz', 6, 'should return Fizz when transform given 6'"
+  })
+  void should_return_1_when_transform_given_1(String output, int number) {
     FizzBuzz fizzBuzz = new FizzBuzz();
-    String output = fizzBuzz.transform(1);
 
-    assertEquals("1", output);
+    assertEquals(output, fizzBuzz.transform(number));
   }
 }
