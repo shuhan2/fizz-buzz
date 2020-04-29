@@ -6,6 +6,14 @@ public enum ZzType {
   private int targetNumber;
   private String returnValue;
 
+  public int getTargetNumber() {
+    return targetNumber;
+  }
+
+  public String getReturnValue() {
+    return returnValue;
+  }
+
   ZzType(int targetNumber, String returnValue) {
     this.targetNumber = targetNumber;
     this.returnValue = returnValue;

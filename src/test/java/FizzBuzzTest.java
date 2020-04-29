@@ -11,9 +11,10 @@ class FizzBuzzTest {
       "'Fizz', 6, 'should return Fizz when transform given number only multiple 3'",
       "'Buzz', 10, 'should return Buzz when transform given number only multiple 5'",
       "'Whizz', 14, 'should return Buzz when transform given number only multiple 7'",
-      "'FizzBuzzWhizz', 210, 'should return Buzz when transform given number multiple 3、5 and  7'"
+      "'FizzBuzzWhizz', 210, 'should return Buzz when transform given number multiple 3、5 and  7'",
+      "'Fizz', 13, 'should return Fizz when transform given number only contains 3'"
   })
-  void should_return_1_when_transform_given_1(String output, int number) {
+  void should_return_output_when_transform_given_number(String output, int number) {
     FizzBuzz fizzBuzz = new FizzBuzz();
 
     assertEquals(output, fizzBuzz.transform(number));
