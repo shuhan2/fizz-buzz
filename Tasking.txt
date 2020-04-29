@@ -42,7 +42,7 @@ then: return "BuzzWhizz"
 9.
 given: 51
 when: transform
-then: return "51"
+then: return "Fizz"
 
 10.
 given: 70
