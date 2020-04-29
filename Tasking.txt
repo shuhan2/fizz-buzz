@@ -44,10 +44,6 @@ given: 51
 when: transform
 then: return "Fizz"
 
-10.
-given: 70
-when: transform
-then: return "70"
 
 11.
 given: 75
@@ -57,5 +53,5 @@ then: return "Fizz"
 12.
 given: 73
 when: transform
-then: return "73"
+then: return "Fizz"
 

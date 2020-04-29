@@ -5,7 +5,7 @@ public class FizzBuzz {
 
   public String transform(int number) {
 
-    List<Rule> rules = Arrays.asList(new Contain5Rule(), new Contain3Rule(), new DefaultRule());
+    List<Rule> rules = Arrays.asList(new Contain7Rule(), new Contain5Rule(), new Contain3Rule(), new DefaultRule());
     String result = rules.stream()
         .filter(rule -> rule.isMatchRule(number))
         .findFirst()
