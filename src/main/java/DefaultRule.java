@@ -15,9 +15,8 @@ public class DefaultRule implements Rule {
 
   @Override
   public String getReturnForRule(int number) {
-    String returnForDefaultRules = rules.stream()
+    return rules.stream()
         .map(rule -> rule.getReturnForRule(number))
         .collect(Collectors.joining());
-    return returnForDefaultRules;
   }
 }

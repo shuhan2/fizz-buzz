@@ -17,6 +17,7 @@ class FizzBuzzTest {
       "'BuzzWhizz', 35, 'should ignore rule for contain 3 when transform given number contains 5'",
       "'Fizz', 51, 'should not ignore rule for multiple 3 when transform given number contains 5'",
       "'Fizz', 75, 'should ignore rule for multiple 5 when transform given number contains 7'",
+      "'Fizz', 73, 'should not ignore rule for contains 3 when transform given number contains 7'",
   })
   void should_return_output_when_transform_given_number(String output, int number) {
     FizzBuzz fizzBuzz = new FizzBuzz();
